@@ -1,0 +1,38 @@
+{% extends 'nav.html' %}
+
+{% block body %}
+{% load static %}
+<div class="container">
+    <div class="row content ml-4" style="height: auto; padding: 80px 0px;">
+        <div class="col-md-8">
+            <h1 style="font-size:70px;">Short links, big results</h1>
+            <p style="font-size:25px;">A URL shortener built with powerful tools to help you grow and protect your brand.</p>
+            <a href="/dashboard" style="border-radius:50px;" class="btn btn-primary p-3 mt-3">Get Started for Free</a>
+        </div>
+        <div class="col-md-4" style="margin-top:-60px;">
+            <img src="{%static 'img1.png' %}" style="width:450px; height:300px;">
+        </div>
+    </div>
+</div>
+
+<div class="main mt-4" style="background-color: #0b1736; height: 300px; text-align: center; padding: 80px 0px;">
+    <h1 style="color: white;">More than a link shortener</h1>
+    <a href="/dashboard" class="btn btn-primary pt-2 pb-2 pl-4 pr-4 mt-4">Get Started</a>
+</div>
+
+
+{% if error %}
+
+<div class="container shadow p-4">
+    <div class="row">
+        <div class="col-12 text-center">
+            <p>The Url you are looking for doesn't exist</p>
+            <a href="/dashboard" class="btn btn-primary">Shorten A Url</a>
+        </div>
+    </div>
+</div>
+
+{% endif %}
+
+
+{% endblock %}
