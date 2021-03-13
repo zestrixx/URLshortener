@@ -31,4 +31,3 @@ urlpatterns = [
     path('deleteurl/', deleteurl, name="deleteurl"),
     path('<str:query>/', home, name="home"),
 ]
-
