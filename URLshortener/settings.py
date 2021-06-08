@@ -27,7 +27,6 @@ DEBUG = False
 
 ALLOWED_HOSTS = ["yourlshortener.herokuapp.com", "localhost"]
 
-
 # Application definition
 
 INSTALLED_APPS = [
